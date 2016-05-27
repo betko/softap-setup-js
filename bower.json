@@ -1,0 +1,12 @@
+{
+  "name": "betko-softap-setup",
+  "description": "Javascript client for SoftAP Setup",
+  "version": "v4.1.1",
+  "main": "browserify/softap-browser.js",
+  "license": "LGPL-3.0",
+  "keywords": [
+    "Particle",
+    "Photon"
+  ],
+  "homepage": "https://github.com/betko/softap-setup-js"
+}

@@ -5,10 +5,16 @@
 Particle SoftAP Setup for JavaScript — Perform wireless setup of Particle devices with Node.js or a browser.
 
 
-## Installation
+## Installation with NPM
 
 ```
 npm install softap-setup
+```
+
+## Install with Bower
+
+```
+bower install betko-softap-setup
 ```
 
 ## Configuration
@@ -161,7 +167,7 @@ Valid security types are as follows:
 
 ### AP Password Security
 
-It's worth noting that this library uses the public key of the device to encrypt any AP passwords that are sent when configuring and connecting your device. 
+It's worth noting that this library uses the public key of the device to encrypt any AP passwords that are sent when configuring and connecting your device.
 
 ## Running in the Browser
 
@@ -175,7 +181,7 @@ npm install -g browserify
 ```
 From the softap-setup-js code directory, run:
 ```js
-browserify softap.js -s SoftAPSetup -o softap-browser.js
+browserify HttpSoftAP.js -s SoftAPSetup -o softap-browser.js
 ```
 This will create a browser-friendly ```softap-browser.js``` file that exports the ```SoftAPSetup``` object. The only difference with the browser version of this object is that it does *NOT* support reading the configuration from a file. All other methods described above will work.
 
@@ -188,7 +194,7 @@ This will create a browser-friendly ```softap-browser.js``` file that exports th
 <head></head>
 <body>
   <script src="softap-browser.js"></script>
-  <script> 
+  <script>
     var sap = new SoftAPSetup();
 
     sap.deviceInfo(callback);
